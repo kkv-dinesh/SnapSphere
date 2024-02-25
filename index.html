@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnapSphere : Home Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/logo.jpeg">
+
+</head>
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar">
+        <a href="index.html">
+            <img src="img/logo.jpeg" class="logo" alt="">
+          </a>          
+        <form class="search-box">
+            <input type="text" placeholder="search" name="search-query" id="search-input">
+            <button class="search-btn" type="submit"><img src="img/icon/search.png" class="search-icon" alt=""></button>
+        </form>
+        <div class="nav-links">
+            <a href="index.html" class="nav-links"><img src="img/icon/home-fill.png" class="nav-icon" alt=""></a>
+            <div class="activity-log">
+                <img src="img/icon/heart-nofill.png" class="nav-icon" alt="">
+                <div class="activity-container hide">
+                    <div class="activity-card">
+                        <img src="img/Harish Kumar.jpeg" class="user-img" alt="">
+                        <p class="activity"><b>@captainhk</b> liked your post</p>
+                        <img src="img/posts/post1.png" class="activity-post" alt="">
+                    </div>
+                    <div class="activity-card">
+                        <img src="img/roxx.jpeg" class="user-img" alt="">
+                        <p class="activity"><b>@roxx</b> liked your post</p>
+                        <img src="img/posts/post1.png" class="activity-post" alt="">
+                    </div>
+                    <div class="activity-card">
+                        <img src="img/Harish Kumar.jpeg" class="user-img" alt="">
+                        <p class="activity"><b>@captainhk</b> liked your post</p>
+                        <img src="img/posts/post1.png" class="activity-post" alt="">
+                    </div>
+                    <div class="activity-card">
+                        <img src="img/Dhanush.jpeg" class="user-img" alt="">
+                        <p class="activity"><b>@dhanush</b> liked your post</p>
+                        <img src="img/posts/post1.png" class="activity-post" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#" class="nav-links"><img src="img/icon/add-nofill.png" class="nav-icon" alt=""></a>
+                <div class="dropdown-content">
+                  <a href="#">Upload</a>
+                </div>
+              </div>
+              
+              <div class="dropdown">
+                <a href="#" class="nav-links"><img src="img/profile pic.jpg" class="nav-icon user-profile" alt=""></a>
+                <div class="dropdown-content">
+                  <a href="user.html">Profile</a>
+                  <a href="#">Get verified</a>
+                  <a href="#">Settings</a>
+                  <a href="login.html">Logout</a>
+                </div>
+              </div>
+        </div>
+    </nav>
+
+    <!-- main section -->
+    <section class="main">
+        <!-- post section -->
+        <div class="post-container">
+            <div class="post">
+                <div class="post-header">
+                    <img src="img/roxx.jpeg" class="user-icon" alt="">
+                    <p class="username">@roxx</p>
+                </div>
+                <div class="post-feed">
+                    <div class="post-overlays">
+                        <img src="img/icon/red-heart.png" class="like-icon" alt="">
+                        <div class="share-window">
+                            <h1 class="title">share the post with others</h1>
+                            <div class="share-link-container">
+                                <input type="text" id="share-link" value="https://www.SnapSphere.com/post/234234234234" disabled>
+                                <button class="copy-btn">copy</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-img-container">
+                        <img src="img/posts/post1.png" alt="">
+                        <img src="img/posts/post2.png" alt="">
+                        <img src="img/posts/post3.png" alt="">
+                        <img src="img/posts/post4.png" alt="">
+                        <img src="img/posts/post5.png" alt="">
+                    </div>
+                </div>
+                <div class="post-detail">
+                    <div class="detail-intracables">
+                        <img src="img/icon/heart-nofill.png" class="like-btn" alt="">
+                        <img src="img/icon/send-nofill.png" class="send-btn" alt="">
+                        <img src="img/icon/comment-nofill.png" class="comment-btn" alt="">
+                    </div>
+                    <span class="likes">2.7k likes</span>
+                    <p class="username">@roxx</p>
+                    <p class="post-des">Capturing moments that last a lifetime. 📸 #ForeverMemories #SnapshotMagic</p>
+
+                    <div class="comment-box">
+                        <input type="text" id="comment-input" placeholder="Add a comment">
+                        <button class="add-comment-btn"><img src="img/carousel-arrow.png" alt=""></button>
+                    </div>
+
+                    <span class="comment-count">300 comments</span>
+                </div>
+            </div>
+            <div class="post">
+                <div class="post-header">
+                    <img src="img/Harish Kumar.jpeg" class="user-icon" alt="">
+                    <p class="username">@captainhk</p>
+                </div>
+                <div class="post-feed">
+                    <div class="post-overlays">
+                        <img src="img/icon/red-heart.png" class="like-icon" alt="">
+                        <div class="share-window">
+                            <h1 class="title">share the post with others</h1>
+                            <div class="share-link-container">
+                                <input type="text" id="share-link" value="https://www.SnapSphere.com/post/234234234234" disabled>
+                                <button class="copy-btn">copy</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-img-container">
+                        <img src="img/post2.png" alt="">
+                    </div>
+                </div>
+                <div class="post-detail">
+                    <div class="detail-intracables">
+                        <img src="img/icon/heart-nofill.png" class="like-btn" alt="">
+                        <img src="img/icon/send-nofill.png" class="send-btn" alt="">
+                        <img src="img/icon/comment-nofill.png" class="comment-btn" alt="">
+                    </div>
+                    <span class="likes">2.7k likes</span>
+                    <p class="username">@captainhk</p>
+                    <p class="post-des">Through the lens, every detail tells a story. 🌟 #VisualTales #FramedByLight</p>
+
+                    <div class="comment-box">
+                        <input type="text" id="comment-input" placeholder="Add a comment">
+                        <button class="add-comment-btn"><img src="img/carousel-arrow.png" alt=""></button>
+                    </div>
+
+                    <span class="comment-count">300 comments</span>
+                </div>
+            </div>
+            <div class="post">
+                <div class="post-header">
+                    <img src="img/Dhanush.jpeg" class="user-icon" alt="">
+                    <p class="username">@dhanush</p>
+                </div>
+                <div class="post-feed">
+                    <div class="post-overlays">
+                        <img src="img/icon/red-heart.png" class="like-icon" alt="">
+                        <div class="share-window">
+                            <h1 class="title">share the post with others</h1>
+                            <div class="share-link-container">
+                                <input type="text" id="share-link" value="https://www.SnapSphere.com/post/234234234234" disabled>
+                                <button class="copy-btn">copy</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-img-container">
+                        <img src="img/post3.png" alt="">
+                    </div>
+                </div>
+                <div class="post-detail">
+                    <div class="detail-intracables">
+                        <img src="img/icon/heart-nofill.png" class="like-btn" alt="">
+                        <img src="img/icon/send-nofill.png" class="send-btn" alt="">
+                        <img src="img/icon/comment-nofill.png" class="comment-btn" alt="">
+                    </div>
+                    <span class="likes">2.7k likes</span>
+                    <p class="username">@dhanush</p>
+                    <p class="post-des">Exploring the world one click at a time. 🌍 #LensAdventures #CaptureTheBeauty</p>
+
+                    <div class="comment-box">
+                        <input type="text" id="comment-input" placeholder="Add a comment">
+                        <button class="add-comment-btn"><img src="img/carousel-arrow.png" alt=""></button>
+                    </div>
+
+                    <span class="comment-count">300 comments</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- right section -->
+        <div class="user-about-section">
+            <div class="user-info">
+                <a href="user.html" class="nav-links">
+                <img src="img/profile pic.jpg" class="user-dp" alt="">
+            </a>
+                <div class="info-container">
+                    <h1 class="name">Dinesh K K V</h1>
+                    <p>Capturing life's moments one click at a time. 📸✨</p>
+                </div>
+            </div>
+            <h1 class="suggestion-heading">suggestions</h1>
+            <div class="suggestion-container">
+                <div class="user-card">
+                    <a href="captainhk.html" class="nav-links">
+                    <img src="img/Harish Kumar.jpeg" class="user-dp" alt="">
+                </a>
+                    <p class="username">@captainhk</p>
+                    <button class="follow-btn" onclick="changeButtonText(this)">follow</button>
+                </div>
+                <div class="user-card">
+                    <a href="roxx.html" class="nav-links">
+                    <img src="img/roxx.jpeg" class="user-dp" alt="">
+                </a>
+                    <p class="username">@roxx</p>
+                    <button class="follow-btn" onclick="changeButtonText(this)">follow</button>
+                </div>
+                <div class="user-card">
+                    <a href="dhanush.html" class="nav-links">
+                    <img src="img/Dhanush.jpeg" class="user-dp" alt="">
+                </a>
+                    <p class="username">@Dhanush</p>
+                    <button class="follow-btn" onclick="changeButtonText(this)">follow</button>
+                </div>
+                <div class="user-card">
+                    <a href="hari.html" class="nav-links">
+                    <img src="img/hp.jpeg" class="user-dp" alt="">
+                </a>
+                    <p class="username">@haribryant</p>
+                    <button class="follow-btn" onclick="changeButtonText(this)">follow</button>
+                </div>
+                <div class="user-card">
+                    <a href="giri.html" class="nav-links">
+                    <img src="img/giri.jpeg" class="user-dp" alt="">
+                </a>
+                    <p class="username">@giri</p>
+                    <button class="follow-btn" onclick="changeButtonText(this)">follow</button>
+                </div>
+                <div class="user-card">
+                    <a href="sathyan.html" class="nav-links">
+                    <img src="img/sathy.jpeg" class="user-dp" alt="">
+                </a>
+                    <p class="username">@sathyan</p>
+                    <button class="follow-btn" onclick="changeButtonText(this)">follow</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/post.js"></script>
+    
+</body>
+</html>
+
+<style>
+    /* Dropdown styles */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+  
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      padding: 12px 16px;
+      z-index: 1;
+      top: calc(100% + 10px);
+    }
+  
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  
+    /* Anchor styles */
+    .dropdown-content a {
+      color: black;
+      text-decoration: none; /* Remove underline */
+      display: block;
+      padding: 8px 0;
+    }
+  
+    /* Anchor hover styles */
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+  </style>
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+    const followBtn = document.querySelector('.follow-btn');
+    
+    followBtn.addEventListener('click', function() {
+        if (followBtn.textContent === 'Follow') {
+            followBtn.textContent = 'Following';
+        } else {
+            followBtn.textContent = 'Follow';
+        }
+    });
+});
+
+    document.addEventListener("DOMContentLoaded", function() {
+      var dropdowns = document.querySelectorAll('.dropdown');
+  
+      dropdowns.forEach(function(dropdown) {
+        dropdown.addEventListener('click', function(event) {
+          event.stopPropagation();
+          var dropdownContent = this.querySelector('.dropdown-content');
+          dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+        });
+      });
+  
+      // Close dropdown when clicking outside
+      document.addEventListener('click', function(event) {
+        dropdowns.forEach(function(dropdown) {
+          var dropdownContent = dropdown.querySelector('.dropdown-content');
+          if (dropdownContent.style.display === 'block' && !dropdown.contains(event.target)) {
+            dropdownContent.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>

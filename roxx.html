@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnapSphere : Profile Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/post.css">
+    <link rel="stylesheet" href="css/user.css">
+    <link rel="icon" type="image/png" href="img/logo.jpeg">
+
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar">
+        <a href="index.html">
+            <img src="img/logo.jpeg" class="logo" alt="">
+          </a>          
+        <form class="search-box">
+            <input type="text" placeholder="search" name="search-query" id="search-input">
+            <button class="search-btn" type="submit"><img src="img/icon/search.png" class="search-icon" alt=""></button>
+        </form>
+        <div class="nav-links">
+            <a href="index.html" class="nav-links"><img src="img/icon/home-nofill.png" class="nav-icon" alt=""></a>
+            <div class="activity-log">
+                <img src="img/icon/heart-nofill.png" class="nav-icon" alt="">
+                <div class="activity-container hide">
+                    <div class="activity-card">
+                        <img src="img/user1.png" class="user-img" alt="">
+                        <p class="activity"><b>@siri</b> liked your post</p>
+                        <img src="img/posts/post1.png" class="activity-post" alt="">
+                    </div>
+                    <div class="activity-card">
+                        <img src="img/user2.png" class="user-img" alt="">
+                        <p class="activity"><b>@siri</b> liked your post</p>
+                        <img src="img/posts/post1.png" class="activity-post" alt="">
+                    </div>
+                    <div class="activity-card">
+                        <img src="img/user1.png" class="user-img" alt="">
+                        <p class="activity"><b>@siri</b> liked your post</p>
+                        <img src="img/posts/post1.png" class="activity-post" alt="">
+                    </div>
+                    <div class="activity-card">
+                        <img src="img/user3.png" class="user-img" alt="">
+                        <p class="activity"><b>@siri</b> liked your post</p>
+                        <img src="img/posts/post1.png" class="activity-post" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#" class="nav-links"><img src="img/icon/add-nofill.png" class="nav-icon" alt=""></a>
+                <div class="dropdown-content">
+                  <a href="#">Upload</a>
+                </div>
+              </div>
+              
+              <div class="dropdown">
+                <a href="#" class="nav-links"><img src="img/profile pic.jpg" class="nav-icon user-profile" alt=""></a>
+                <div class="dropdown-content">
+                  <a href="user.html">Profile</a>
+                  <a href="#">Get verified</a>
+                  <a href="#">Settings</a>
+                  <a href="login.html">Logout</a>
+                </div>
+              </div>
+        </div>
+    </nav>
+
+    <!-- user info -->
+    <div class="user-info">
+        <img src="img/roxx.jpeg" class="user-dp" alt="" onclick="zoomImage(this)">
+        <div class="info-container">
+            <h1 class="name">Roxx</h1>
+            <p class="username">@Roxx</p>
+            <p>Capturing life's moments one click at a time. 📸✨</p>
+        </div>
+        <p class="number-card following-card">
+            2K <span>following</span>
+        </p>
+        <p class="number-card followers-card">
+            70K <span>followers</span>
+        </p>
+        <p class="number-card posts-card">
+            5 <span>posts</span>
+        </p>
+    </div>
+
+    <div class="btn-container">
+        <button class="follow-btn" onclick="changeButtonText(this)">follow</button>
+
+    </div>
+
+    <div class="posts-container">
+        <div class="post">
+            <img src="img/posts/post1.png" class="post-img" alt="">
+            <div class="likes">
+                <img src="img/icon/white-heart.png" class="icon" alt="">
+                <p class="likes-count">32k likes</p>
+            </div>
+        </div>
+        <div class="post">
+            <img src="img/posts/post5.png" class="post-img" alt="">
+            <div class="likes">
+                <img src="img/icon/white-heart.png" class="icon" alt="">
+                <p class="likes-count">23k likes</p>
+            </div>
+        </div>
+        <div class="post">
+            <img src="img/posts/post6.png" class="post-img" alt="">
+            <div class="likes">
+                <img src="img/icon/white-heart.png" class="icon" alt="">
+                <p class="likes-count">1.7k likes</p>
+            </div>
+        </div>
+        <div class="post">
+            <img src="img/posts/post7.png" class="post-img" alt="">
+            <div class="likes">
+                <img src="img/icon/white-heart.png" class="icon" alt="">
+                <p class="likes-count">2k likes</p>
+            </div>
+        </div>
+        <div class="post">
+            <img src="img/posts/post10.png" class="post-img" alt="">
+            <div class="likes">
+                <img src="img/icon/white-heart.png" class="icon" alt="">
+                <p class="likes-count">2k likes</p>
+            </div>
+        </div>
+
+    </div>
+
+    <h1 class="suggestion-heading">Suggestions</h1>
+    <div class="suggestion-slider">
+        <img src="img/carousel-arrow.png" class="nxt-arrow" alt="">
+        <img src="img/carousel-arrow.png" class="pre-arrow" alt="">
+        <div class="suggestion-container">
+            <div class="user-card">
+                <img src="img/user1.png" class="user-dp" alt="">
+                <p class="username">@deepu</p>
+                <button class="follow-btn">follow</button>
+            </div>
+            <div class="user-card">
+                <img src="img/user2.png" class="user-dp" alt="">
+                <p class="username">@vishnu</p>
+                <button class="follow-btn">follow</button>
+            </div>
+            <div class="user-card">
+                <img src="img/user3.png" class="user-dp" alt="">
+                <p class="username">@vijay</p>
+                <button class="follow-btn">follow</button>
+            </div>
+            <div class="user-card">
+                <img src="img/user4.png" class="user-dp" alt="">
+                <p class="username">@suriya</p>
+                <button class="follow-btn">follow</button>
+            </div>
+            <div class="user-card">
+                <img src="img/user5.png" class="user-dp" alt="">
+                <p class="username">@nani</p>
+                <button class="follow-btn">follow</button>
+            </div>
+            <div class="user-card">
+                <img src="img/user6.png" class="user-dp" alt="">
+                <p class="username">@anirudh</p>
+                <button class="follow-btn">follow</button>
+            </div>
+            <div class="user-card">
+                <img src="img/user3.png" class="user-dp" alt="">
+                <p class="username">@harris</p>
+                <button class="follow-btn">follow</button>
+            </div>
+            <div class="user-card">
+                <img src="img/user4.png" class="user-dp" alt="">
+                <p class="username">@rahman</p>
+                <button class="follow-btn">follow</button>
+            </div>
+            <div class="user-card">
+                <img src="img/user5.png" class="user-dp" alt="">
+                <p class="username">@adharva</p>
+                <button class="follow-btn">follow</button>
+            </div>
+            <div class="user-card">
+                <img src="img/user6.png" class="user-dp" alt="">
+                <p class="username">@Kaarthi</p>
+                <button class="follow-btn">follow</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- popup post -->
+    <div class="post-popup">
+        <div class="close-overlay"></div>
+        <div class="post">
+            <div class="post-feed">
+                <div class="post-overlays">
+                    <img src="img/icon/red-heart.png" class="like-icon" alt="">
+                    <div class="share-window">
+                        <h1 class="title">share the post with others</h1>
+                        <div class="share-link-container">
+                            <input type="text" id="share-link" value="https://www.socialize.com/post/234234234234" disabled>
+                            <button class="copy-btn">copy</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-img-container">
+                    <img src="img/posts/post1.png" alt="">
+                    <img src="img/posts/post2.png" alt="">
+                    <img src="img/posts/post3.png" alt="">
+                    <img src="img/posts/post4.png" alt="">
+                    <img src="img/posts/post5.png" alt="">
+                </div>
+            </div>
+    
+            <div class="feed">
+                <div class="post-header">
+                    <img src="img/profile pic.jpg" class="user-icon" alt="">
+                    <p class="username">@dineshkkv</p>
+                </div>
+                <div class="post-detail">
+                    <div class="detail-intracables">
+                        <img src="img/icon/heart-nofill.png" class="like-btn" alt="">
+                        <img src="img/icon/send-nofill.png" class="send-btn" alt="">
+                        <img src="img/icon/comment-nofill.png" class="comment-btn" alt="">
+                    </div>
+                    <p class="post-des">"Revving up for adventure. 🚗💨 #CarLove #RoadTripping #DriveLife"</p>
+    
+                    <div class="comments-container">
+                        <div class="comment-card">
+                            <img src="img/user1.png" class="user-dp" alt="">
+                            <div class="comment-body">
+                                <span class="username">@dinesh33</span>
+                                <p class="comment">this is amazing 🔥</p>
+                            </div>
+                        </div>
+                        <div class="comment-card">
+                            <img src="img/user2.png" class="user-dp" alt="">
+                            <div class="comment-body">
+                                <span class="username">@alex</span>
+                                <p class="comment">wow 😮 fantastic😍</p>
+                            </div>
+                        </div>
+                        <div class="comment-card">
+                            <img src="img/user3.png" class="user-dp" alt="">
+                            <div class="comment-body">
+                                <span class="username">@siri</span>
+                                <p class="comment">Wonderful 🥵</p>
+                            </div>
+                        </div>
+                        <div class="comment-card">
+                            <img src="img/user4.png" class="user-dp" alt="">
+                            <div class="comment-body">
+                                <span class="username">@jack</span>
+                                <p class="comment">amazing 🔥</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="comment-box">
+                        <input type="text" id="comment-input" placeholder="Add a comment">
+                        <button class="add-comment-btn"><img src="img/icon/comment-nofill.png" alt=""></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/post.js"></script>
+    <script src="js/user.js"></script>
+
+</body>
+
+</html>
+
+<style>
+    /* Dropdown styles */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+  
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      padding: 12px 16px;
+      z-index: 1;
+      top: calc(100% + 10px);
+    }
+  
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  
+    /* Anchor styles */
+    .dropdown-content a {
+      color: black;
+      text-decoration: none; /* Remove underline */
+      display: block;
+      padding: 8px 0;
+    }
+  
+    /* Anchor hover styles */
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    .user-dp {
+    transition: transform 0.3s ease-in-out;
+}
+
+.zoomed {
+    transform: scale(2); /* You can adjust the scale factor as needed */
+    z-index: 9999; /* Ensure the zoomed image appears above other content */
+    position: absolute; /* Positioning the zoomed image */
+    top: 25; /* Place it at the top */
+    left: 25; /* Place it at the left */
+}
+  </style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var dropdowns = document.querySelectorAll('.dropdown');
+  
+      dropdowns.forEach(function(dropdown) {
+        dropdown.addEventListener('click', function(event) {
+          event.stopPropagation();
+          var dropdownContent = this.querySelector('.dropdown-content');
+          dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+        });
+      });
+  
+      // Close dropdown when clicking outside
+      document.addEventListener('click', function(event) {
+        dropdowns.forEach(function(dropdown) {
+          var dropdownContent = dropdown.querySelector('.dropdown-content');
+          if (dropdownContent.style.display === 'block' && !dropdown.contains(event.target)) {
+            dropdownContent.style.display = 'none';
+
+      
+          }
+        });
+      });
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+    const followBtn = document.querySelector('.follow-btn');
+    
+    followBtn.addEventListener('click', function() {
+        if (followBtn.textContent === 'Follow') {
+            followBtn.textContent = 'Following';
+        } else {
+            followBtn.textContent = 'Follow';
+        }
+    });
+});
+
+
+function zoomImage(img) {
+    img.classList.toggle('zoomed');
+}
+    document.getElementById("uploadForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    const formData = new FormData(this);
+    fetch("/upload", {
+      method: "POST",
+      body: formData
+    })
+    .then(response => {
+      if (response.ok) {
+        // Handle successful upload
+        return response.json(); // Assuming server responds with JSON data
+      } else {
+        throw new Error("Upload failed");
+      }
+    })
+    .then(data => {
+      // Handle the data received from the server (if needed)
+      console.log("Upload successful:", data);
+    })
+    .catch(error => {
+      // Handle upload failure
+      console.error("Error:", error);
+       });
+  });
+  </script>
