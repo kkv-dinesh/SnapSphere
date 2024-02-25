@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnapSphere : Profile Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/post.css">
+    <link rel="stylesheet" href="css/user.css">
+    <link rel="icon" type="image/png" href="img/logo.jpeg">
+
+    <style>
+        /* Dropdown styles */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            padding: 12px 16px;
+            z-index: 1;
+            top: calc(100% + 10px);
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Anchor styles */
+        .dropdown-content a {
+            color: black;
+            text-decoration: none;
+            /* Remove underline */
+            display: block;
+            padding: 8px 0;
+        }
+
+        /* Anchor hover styles */
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .user-dp {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .zoomed {
+            transform: scale(2);
+            /* You can adjust the scale factor as needed */
+            z-index: 9999;
+            /* Ensure the zoomed image appears above other content */
+            position: absolute;
+            /* Positioning the zoomed image */
+            top: 25;
+            /* Place it at the top */
+            left: 25;
+            /* Place it at the left */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="file"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        .message {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .error {
+            color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar">
+        <a href="index.html">
+            <img src="img/logo.jpeg" class="logo" alt="">
+        </a>
+        <form class="search-box">
+            <input type="text" placeholder="search" name="search-query" id="search-input">
+            <button class="search-btn" type="submit"><img src="img/icon/search.png" class="search-icon" alt=""></button>
+        </form>
+        <div class="nav-links">
+            <a href="index.html" class="nav-links"><img src="img/icon/home-nofill.png" class="nav-icon" alt=""></a>
+            <div class="activity-log">
+                <img src="img/icon/heart-nofill.png" class="nav-icon" alt="">
+                <div class="activity-container hide">
+                    <div class="activity-card">
+                        <img src="img/user1.png" class="user-img" alt="">
+                        <p class="activity"><b>@siri</b> liked your post</p>
+                        <img src="img/posts/post1.png" class="activity-post" alt="">
+                    </div>
+                    <div class="activity-card">
+                        <img src="img/user2.png" class="user-img" alt="">
+                        <p class="activity"><b>@siri</b> liked your post</p>
+                        <img src="img/posts/post1.png" class="activity-post" alt="">
+                    </div>
+                    <div class="activity-card">
+                        <img src="img/user1.png" class="user-img" alt="">
+                        <p class="activity"><b>@siri</b> liked your post</p>
+                        <img src="img/posts/post1.png" class="activity-post" alt="">
+                    </div>
+                    <div class="activity-card">
+                        <img src="img/user3.png" class="user-img" alt="">
+                        <p class="activity"><b>@siri</b> liked your post</p>
+                        <img src="img/posts/post1.png" class="activity-post" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#" class="nav-links"><img src="img/icon/add-nofill.png" class="nav-icon" alt=""></a>
+                <div class="dropdown-content">
+                    <a href="#">Upload</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <a href="#" class="nav-links"><img src="img/profile pic.jpg" class="nav-icon user-profile" alt=""></a>
+                <div class="dropdown-content">
+                    <a href="user.html">Profile</a>
+                    <a href="verify.html">Get verified</a>
+                    <a href="#">Settings</a>
+                    <a href="login.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main style="margin-top: 80px;">
+        <section>
+            <p>Verification helps build trust in the SnapSphere community. To get verified, please provide the following information:</p>
+            <br>
+            <form id="verificationForm" onsubmit="submitForm(event)">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+                <br><br>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+    
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+                <br><br>
+    
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+                <br><br>
+    
+                <label for="mobile">Mobile Number:</label>
+                <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
+                <br><br>
+    
+                <label for="photo">Upload Photo ID:</label>
+                <br>
+                <p>You can upload either of the following proofs:</p>
+                <br>
+            <ul>
+                <li>Aadhar card</li><br>
+                <li>PAN card</li><br>
+                <li>Passport</li><br>
+            </ul>
+            <br>
+                <input type="file" id="photo" name="photo" accept="image/*" required>
+                <br><br>
+    
+                <button type="submit">Submit Verification Request</button>
+            </form>
+            <div class="message" id="message"></div>
+        </section>
+    </main>
+    
+    
+    
+    
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var dropdowns = document.querySelectorAll('.dropdown');
+
+            dropdowns.forEach(function(dropdown) {
+                dropdown.addEventListener('click', function(event) {
+                    event.stopPropagation();
+                    var dropdownContent = this.querySelector('.dropdown-content');
+                    dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+                });
+            });
+
+            // Close dropdown when clicking outside
+            document.addEventListener('click', function(event) {
+                dropdowns.forEach(function(dropdown) {
+                    var dropdownContent = dropdown.querySelector('.dropdown-content');
+                    if (dropdownContent.style.display === 'block' && !dropdown.contains(event.target)) {
+                        dropdownContent.style.display = 'none';
+
+
+                    }
+                });
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const followBtn = document.querySelector('.follow-btn');
+
+            followBtn.addEventListener('click', function() {
+                if (followBtn.textContent === 'Follow') {
+                    followBtn.textContent = 'Following';
+                } else {
+                    followBtn.textContent = 'Follow';
+                }
+            });
+        });
+
+        function submitForm(event) {
+            event.preventDefault();
+            var fullname = document.getElementById('fullname').value;
+            var email = document.getElementById('email').value;
+            var photo = document.getElementById('photo').value;
+
+            var messageElement = document.getElementById('message');
+
+            if (fullname && email && photo) {
+                messageElement.textContent = "Thank you for registering. We'll notify you soon.";
+                document.getElementById('verificationForm').reset();
+            } else {
+                messageElement.textContent = "Error: Please fill in all details.";
+            }
+        }
+
+        function zoomImage(img) {
+            img.classList.toggle('zoomed');
+        }
+
+        function submitForm(event) {
+        event.preventDefault();
+        var fullname = document.getElementById('fullname').value;
+        var email = document.getElementById('email').value;
+        var gender = document.getElementById('gender').value;
+        var dob = new Date(document.getElementById('dob').value);
+        var mobile = document.getElementById('mobile').value;
+        var photo = document.getElementById('photo').value;
+
+        var messageElement = document.getElementById('message');
+
+        // Calculate age from date of birth
+        var age = calculateAge(dob);
+
+        // Check if age is above 18
+        if (age >= 18) {
+            if (fullname && email && gender && dob && mobile && photo) {
+                messageElement.textContent = "Thank you for registering. We'll notify you soon.";
+                document.getElementById('verificationForm').reset();
+            } else {
+                messageElement.textContent = "Error: Please fill in all details.";
+            }
+        } else {
+            messageElement.textContent = "Error: You must be at least 18 years old to register.";
+        }
+    }
+
+    // Function to calculate age
+    function calculateAge(birthday) {
+        var today = new Date();
+        var age = today.getFullYear() - birthday.getFullYear();
+        var m = today.getMonth() - birthday.getMonth();
+        if (m < 0 || (m === 0 && today.getDate() < birthday.getDate())) {
+            age--;
+        }
+        return age;
+    }
+    </script>
+
+    <script>
+        document.getElementById("uploadForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            const formData = new FormData(this);
+            fetch("/upload", {
+                    method: "POST",
+                    body: formData
+                })
+                .then(response => {
+                    if (response.ok) {
+                        // Handle successful upload
+                        return response.json(); // Assuming server responds with JSON data
+                    } else {
+                        throw new Error("Upload failed");
+                    }
+                })
+                .then(data => {
+                    // Handle the data received from the server (if needed)
+                    console.log("Upload successful:", data);
+                })
+                .catch(error => {
+                    // Handle upload failure
+                    console.error("Error:", error);
+                });
+        });
+    </script>
+</body>
+
+</html>
