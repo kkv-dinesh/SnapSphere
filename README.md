@@ -37,4 +37,5 @@ Happy snapping!
 
 ## Output Screen Shots
 
+![afterverifing](https://github.com/kkv-dinesh/SnapSphere/assets/132910073/ed5e1481-3e98-4109-af94-5c380d9a6e5f)
 
